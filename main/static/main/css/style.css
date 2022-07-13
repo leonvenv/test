@@ -1,0 +1,86 @@
+body {
+    font-family: Tahoma;
+    background : #ff6c00;
+    margin: 0;
+}
+h1 {
+    margin: 0 ;
+
+    padding-bottom: 5px;
+    border-bottom: 3px solid #5200a5;
+}
+form {
+    margin: 0 auto;
+    background :rgba(0,186,255,0.77);
+    width: 450px;
+    heigth: 500px;
+    padding: 20px;
+    box-shadow : 2px 2px 5px rgba(0,0,0,0.82)
+
+}
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+input {
+    margin-top: 10px;
+    heigth: 40px;
+    width: 400px;
+    border-radius: 20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size 10px;
+    box-shadow : 2px 2px 5px rgba(0,0,0,0.82);
+}
+input:focus {
+    border : 2px solid #6c00ff;
+    transform: traslatex(15px);
+    width: 385px;
+}
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    heigth: 50px;
+    color: #fff;
+    background: #5200a5;
+    border: none;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+a {
+    margin:  0 auto;
+    width: 450px;
+    heigth: 500px;
+    padding: 20px;
+}
+.last {
+
+    margin: 0 auto;
+    background :rgba(0,186,255,0.77);
+    width: 450px;
+    heigth: 500px;
+    padding: 20px;
+    box-shadow : 2px 2px 5px rgba(0,0,0,0.82)
+}
+nav {
+    margin: 0 auto;
+    position: relative;
+    width: 590px;
+    heigth: 50px;
+    background :rgba(0,186,255,0.77);
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #000;
+}
+nav a {
+    line-heigth: 50px;
+    width: 500px;
+    heigth: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}

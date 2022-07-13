@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Главная страница</title>
+        <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet" />
+        <link rel="shortcut icon" href="{% static 'main/images/main.ico' %}" type="image/x-icon"/>
+    </head>
+    <body>
+<!--    {% block mainmenu %}-->
+        {% if request.user.is_authenticated %}
+         <li class ="last"> {{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
+         <form method = "post"> {% csrf_token %}
+             {{ form.as_p }}
+             <button type="submit" name="button">Сократить</button>
+         </form>
+          <h1>{{ a }}</h1>
+        {% else %}
+        <nav>
+            <a href="{% url 'register' %}">Регистрация</a>
+            <a href="{% url 'login' %}">Войти</a>
+        </nav>
+        {% endif %}
+<!--    {% endblock mainmenu %}-->
+    </body>
+</html>

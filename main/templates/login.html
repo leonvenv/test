@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Авторизация</title>
+        <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet" />
+        <link rel="shortcut icon" href="{% static 'main/images/main.ico' %}" type="image/x-icon"/>
+    </head>
+    <body>
+        <form action="" method="post">{% csrf_token %}
+
+            {{form.as_p}}
+
+            <button type="submit">Войти</button>
+        </form>
+    </body>
+</html>
